@@ -1,4 +1,4 @@
-# HomeAssistant
+# Automação
 Automação com o Home Assistant
 
 Equipamentos:
