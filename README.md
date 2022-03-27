@@ -14,4 +14,5 @@ Home Assitant v 7.5 para Pi 2
 
 
 PZEM-004T V3
-      - https://esphome.io/components/sensor/pzemac.html
+   - https://esphome.io/components/sensor/pzemac.html
+   - 
