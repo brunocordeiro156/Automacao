@@ -1,0 +1,33 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+sensor:
+#Monitoramento da Raspberry
+  - platform: systemmonitor
+    resources:
+      - type: processor_use
+      - type: memory_free
+      - type: memory_use_percent
+      - type: disk_use_percent
+        arg: /home
+      - type: ipv4_address
+        arg: eth0
+      - type: last_boot
+      - type: processor_temperature
+      - type: last_boot
+
+frontend:
+  themes: !include_dir_merge_named themes
+  
+lovelace:
+  resources:
+    - url: /local/mini-media-player-bundle.js?v=1.16.2
+      type: module
