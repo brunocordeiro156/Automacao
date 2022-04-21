@@ -7,8 +7,9 @@ Equipamentos:
    - ESP8266 (Module E)
 
    - PZEM-004T V3
+   - Sensor DHT11 (temperatura e umidade)
 
-Home Assitant v 7.5 para Pi 2
+Home Assistant 2022.4.0
    - 
 
 
