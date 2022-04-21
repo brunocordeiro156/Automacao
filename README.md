@@ -8,6 +8,7 @@ Equipamentos:
 
    - PZEM-004T V3
    - Sensor DHT11 (temperatura e umidade)
+   - Magic Home RGB WiFi Controller
 
 Home Assistant 2022.4.0
    - 
