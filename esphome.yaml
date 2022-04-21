@@ -45,18 +45,14 @@ sensor:
   - platform: wifi_signal
     name: "WiFi Signal Sensor"
     update_interval: 60s
-    
-  - platform: adc
-    pin: A0
-    name: "Bedroom Temperature"
+
+  - platform: dht
+    pin: 14
+    temperature:
+      name: "Bedroom Temperature"
+    humidity:
+      name: "Bedroom Humidity"
     update_interval: 60s
-    unit_of_measurement: "°C"
-    icon: "mdi:thermometer"
-    device_class: "temperature"
-    state_class: "measurement"
-    accuracy_decimals: 1
-    filters:
-      - multiply: 326.02
 
   - platform: pzemac
     modbus_id: modbus1
